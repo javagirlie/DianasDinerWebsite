@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="DinerStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Order Online</title>
+</head>
+<body class="page-body">
+    <header>
+        <h1 class="header-title">DINING <br> WITH <br> DIANA</h1></div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+
+            <button class="cart">
+                <i class='bx bx-cart'></i>
+                <span id="cart-count">0</span>
+            </button>
+    </header>    
+    
+    <h1>Place Order</h1>
+        <div class="order-container">
+            <div class="order-header">
+                <h2>Items</h2>
+                <h2>Quantity</h2>
+                <h2>Prices</h2>
+            </div>
+
+            <div class="order-values">
+                <div id="names"></div>
+                <div id="quantities"></div>
+                <div id="prices"></div>
+            </div>
+
+            <hr class="underline">
+
+            <div class="order-total">
+                <h3>Total Prices</h3>
+                <div id="total"></div>
+            </div>
+        </div>
+  
+        <div class="button-container">
+            <form action="menu.html">
+                <button class="buttons" type="submit">Add More</button>
+            </form>   
+            
+            <button class="buttons" type="button" onclick="restartCart()">Restart Order</button>
+            
+            <form action="Paynow.html">
+                <button class="buttons" type="submit">Pay Now</button>
+            </form>
+        </div>
+   
+   <script src="cart.js"></script>
+</body>
+</html> 
+

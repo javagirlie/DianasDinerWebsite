@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="DinerStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Order Confirmation</title>
+    <script defer src="Paynow.js"></script>
+</head> 
+<body class="page-body">
+    <header>
+        <h1 class="header-title">DINING <br> WITH <br> DIANA</h1></div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+
+             <button class="cart">
+                <i class='bx bx-cart'></i>
+                <span id="cart-count">0</span>
+            </button>
+    </header>
+
+    <h1>Order Confirmed</h1>
+    `   <div class="order-container">
+        <h3>Thank you for your purchase!</h3>
+        <h3><br>Your order will be ready shortly</h3>
+        <h3><br>You will recieve an email notification when ready for pickup</h3>
+        <br>
+        <button onclick="location.href='menu.html'">Back to Menu</button>
+</div>
+<script src="cart.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", clearCart);
+</script>
+</body>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="DinerStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>French Toast</title>
+    <script defer src="Paynow.js"></script>
+</head> 
+<body class="page-body">
+    <header>
+        <h1 class="header-title">DINING <br> WITH <br> DIANA</h1></div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+
+             <button class="cart">
+                <i class='bx bx-cart'></i>
+                <span id="cart-count">0</span>
+            </button>
+    </header>
+    <h2>Create an Account and  Enter Payment Details Below</h2>
+        <form class="payment-container" id="form" action="/" novalidate>
+            <div class="payment-grid">
+                <div class="payment-section">
+                <h5>Account Details</h5>
+
+
+                <div class="input-control">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" required>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                    <div class="error"></div>
+                </div>
+                
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <div class="error"></div>
+                </div>
+               
+                <div class="input-control">
+                    <label for="password">Password again</label>
+                    <input type="password" name="password2" id="password2" required>
+                    <div class="error"></div>
+                </div>
+            </div>
+            <div class="payment-section">
+            <h5>Payment Details</h5>
+                
+                <div class="input-control">
+                    <label for="cardnumber">Card Number</label>
+                    <input type="number" name="cardnumber" id="cardnumber" required>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="expirationdate">Expiration Date</label>
+                    <input type="date" name="expirationdate" id="expirationdate" required>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="cvv">CVV</label>
+                    <input type="number" name="cvv" id="cvv" required>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="zipcode">Zip Code</label>
+                    <input type="number" name="zipcode" id="zipcode" required>
+                    <div class="error"></div>
+                </div>
+            </div>
+
+            <button style="max-width: 100%;" type="submit" value="Submit">Confirm</button>
+            </div>
+
+        </form>
+
+  
+   <script src="cart.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="DinerStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Menu</title>
+</head>
+
+<body class="page-body">
+    <header>
+        <h1 class="header-title">DINING <br> WITH <br> DIANA</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="order.html">ORDER</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+
+                </ul> 
+            </nav>
+            <button class="cart">
+                <i class='bx bx-cart'></i>
+                <span id="cart-count">0</span>
+            </button>
+    </header>
+
+    <h1> Menu</h1>
+    <div class="container">
+            <div class="menu">
+                <h3 class="menu-title">
+                    Breakfast
+                </h3>
+                <div class="menu-row">
+                        <div class="menu-item">
+                            <img src="food1.png" alt="Icon of French toast on plate">
+                                <h4 style="padding: 10%">French Toast</h4>
+                                <button onclick="addToCart('French Toast', 15)">Add</button>
+                        </div>
+
+                        <div class="menu-item">
+                            <img src="food2.png" alt="Icon of Pancakes on plate">
+                                <h4 style="padding: 10%">Pancakes</h4>
+                                <button onclick="addToCart('Pancakes', 20)">Add</button>
+                        </div>
+                    
+                        <div class="menu-item">
+                            <img src="food3.png" alt="Icon of jello pudding on a platter">
+                                <h4 style="padding: 10%">Jello Pudding</h4>
+                                <button onclick="addToCart('Jello Pudding', 10)">Add</button>
+                        </div>
+                </div>
+                <button class="menu-toggle">
+                    <i class='bx bxs-chevron-down'></i>
+                    <i class="bx bx-chevron-up"></i>
+                </button>
+            </div>
+
+            <div class="menu">
+                <h3 class="menu-title">
+                    Lunch
+                </h3>
+             <div class="menu-row">
+                <div class="menu-item">
+                    <img src="chicken.svg" alt="Icon of chicken and veggies on a platter">
+                    <h4 style="padding: 10%">Chicken and Veggies</h4>
+                    <button onclick="addToCart('Steak', 20)">Add</button>
+                </div>
+
+            
+                <div class="menu-item">
+                    <img src="tacos.svg" alt="Icon of tacos and a drink">
+                    <h4 style="padding: 10%">Tacos</h4>
+                    <button onclick="addToCart('Tacos', 13)">Add</button>
+                </div>
+
+                <div class="menu-item">
+                    <img src="pasta.svg" alt="Icon of pasta in a bowl">
+                    <h4 style="padding: 10%">Pasta</h4>
+                    <button onclick="addToCart('Pasta', 16)">Add</button>
+                </div>
+             </div>
+                <button class="menu-toggle">
+                    <i class='bx bxs-chevron-down'></i>
+                    <i class="bx bx-chevron-up"></i>
+                </button> 
+            </div>
+
+            <div class="menu">
+                <h3 class="menu-title">
+                    Dessert
+                </h3>
+
+                <div class="menu-row">
+                    <div class="menu-item">
+                        <img src="cake.svg" alt="Icon of cake on a platter">
+                        <h4 style="padding: 10%">Cake</h4>
+                        <button onclick="addToCart('Cake', 10)">Add</button>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="pastry.svg" alt="Icon of pastries plate">
+                        <h4 style="padding: 10%">Pastries</h4>
+                        <button onclick="addToCart('Pastry', 7)">Add</button>
+                    </div>
+                </div>
+                 <button class="menu-toggle">
+                    <i class='bx bxs-chevron-down'></i>
+                    <i class='bx bx-chevron-up'></i> 
+                </button>
+            </div>
+        </div>
+
+    <div id="summary"></div>
+
+    <script src="cart.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
