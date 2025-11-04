@@ -15,7 +15,7 @@ const zipcode = document.getElementById('zipcode');
 
 
 
-form.addEventListener('submit', e=> {               //why is the "form." part necessary?
+form.addEventListener('submit', e=> {               
     e.preventDefault();     
     if(validateInputs()) {
         window.location.href = "orderconfirmation.html";
@@ -43,8 +43,7 @@ const isValidEmail = email => {
 
 
 
-const validateInputs = () => {      //why is the function assigned to a const?
-    //get value of all of the input fields
+const validateInputs = () => {      
     let success = true;
     const firstnameValue = firstname.value.trim();
     const lastnameValue = lastname.value.trim();
@@ -140,10 +139,3 @@ const validateInputs = () => {      //why is the function assigned to a const?
     }
 };
 
-
-
-
-
-    //figure out why my form isnot validating with this file 
-    //https://www.youtube.com/watch?v=CYlNJpltjMM
-    //get chat to explain the isValidEmail and setError/setSucess email
